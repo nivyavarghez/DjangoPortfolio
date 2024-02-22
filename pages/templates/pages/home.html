@@ -1,0 +1,31 @@
+<!--to extend the parent template(base.html) we use  tag at the beginning of
+child template-->
+{% extends "base.html"%}
+{% load static %}
+
+{% block page_content%}
+
+<div class="image-container">
+    <img src="{% static 'images/image1.jpg' %}" alt="My Image">
+</div>
+
+<section id="abt-us" class="py-5">
+    <div class="container">
+      <div class ="row">
+        <div class="col-lg-6">
+            <img src="{% static 'images/image2.jpg' %}" class="img-fluid" alt="An random img">
+        </div>
+        <div class="col-lg-6">
+          <div class="about-content">
+            <h2 class="section-heading mb-4">About Me</h2>
+            <p class="lead"></p>
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+{% endblock page_content%}
+
